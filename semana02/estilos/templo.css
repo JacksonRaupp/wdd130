@@ -1,0 +1,97 @@
+:root {
+  --cor-do-fundo: rgb(233, 233, 233);
+  --cor-das-extremidades: rgb(47, 47, 51);
+  --cor-da-borda-da-imagem: rgb(243, 243, 243);
+  --cor-das-sessoes: rgb(220, 220, 220);
+  --cor-do-divisor: rgb(119, 119, 119);
+  --cor-da-sombra: rgba(0, 0, 0, 0.25);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--cor-do-fundo);
+}
+
+header,
+footer {
+  color: white;
+  text-align: center;
+  background-color: var(--cor-das-extremidades);
+}
+
+header {
+  padding: 24px;
+  font-size: 2rem;
+}
+
+footer {
+  padding: 26px;
+  font-size: 1.5rem;
+}
+
+main {
+  flex: 1;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+}
+
+h1 {
+  margin-bottom: 40px;
+  font-size: 4rem;
+  text-align: center;
+}
+
+picture {
+  display: block;
+  margin-bottom: 60px;
+  padding: 18px;
+  background-color: var(--cor-da-borda-da-imagem);
+  box-shadow: 0 2px 10px var(--cor-da-sombra);
+}
+
+picture img {
+  display: block;
+  width: 100%;
+}
+
+section {
+  margin-bottom: 40px;
+  padding: 40px;
+  background-color: var(--cor-das-sessoes);
+}
+
+section h2 {
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  font-size: 2.5rem;
+  border-bottom: 2px solid var(--cor-do-divisor);
+}
+
+section p,
+section li {
+  font-size: 1.5rem;
+  line-height: 1.8;
+}
+
+section ul {
+  padding-left: 28px;
+}
+
+section li {
+  margin-bottom: 18px;
+}
