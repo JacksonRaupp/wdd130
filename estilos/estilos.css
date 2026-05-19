@@ -4,9 +4,9 @@
   --estilo-da-borda: solid;
   --espessura-da-borda: 1px;
 
-  /* fundo escuro */
-  --cor-do-fundo-escuro-1: darkblue;
-  --cor-do-fundo-escuro-2: gray;
+  /* cores gerais */
+  --cor-destaque: darkblue;
+  --cor-do-fundo-escuro: gray;
   --cor-texto-fundo-escuro: white;
 
   /* limites */
@@ -18,7 +18,7 @@ main {
 }
 
 nav {
-  background-color: var(--cor-do-fundo-escuro-1);
+  background-color: var(--cor-destaque);
   padding: 10px;
 }
 
@@ -29,7 +29,7 @@ nav a {
 }
 
 h1 {
-  color: var(--cor-do-fundo-escuro-1);
+  color: var(--cor-destaque);
 }
 
 main img {
@@ -37,7 +37,7 @@ main img {
   height: auto;
   border: var(--espessura-da-borda) var(--estilo-da-borda) var(--cor-da-borda);
   padding: 2px;
-  box-shadow: 0 0 30px var(--cor-do-fundo-escuro-2);
+  box-shadow: 0 0 30px var(--cor-do-fundo-escuro);
 }
 
 p {
@@ -54,7 +54,7 @@ aside {
   margin: 0;
   border: var(--espessura-da-borda) var(--estilo-da-borda) var(--cor-da-borda);
   padding: 10%;
-  background-color: var(--cor-do-fundo-escuro-2);
+  background-color: var(--cor-do-fundo-escuro);
   color: var(--cor-texto-fundo-escuro);
 }
 
