@@ -1,0 +1,94 @@
+:root {
+  /* Cor */
+  --cor-fundo: #0b1f2a; /* azul petróleo */
+  --cor-primaria: #0e7490; /* azul rio */
+  --cor-destaque: #14b8a6; /* turquesa */
+  --cor-importante: #f97316; /* laranja */
+  --cor-texto: #f8fafc; /* banco / cinza */
+  --cor-sombra: black;
+
+  /* Fonte */
+  --fonte-geral: Arial, Helvetica, sans-serif;
+  --fonte-titulo:
+    system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fonte-geral);
+  color: var(--cor-texto);
+  background-color: var(--cor-fundo);
+}
+
+header,
+main,
+footer {
+  width: 840px;
+  height: auto;
+  background-color: var(--cor-fundo);
+}
+
+h1,
+h2 {
+  font-family: var(--fonte-titulo);
+  color: var(--cor-texto);
+  text-shadow: 0 0 10px var(--cor-sombra);
+}
+
+nav,
+p,
+section,
+article {
+  margin: 16px;
+  padding: 8px;
+}
+
+.rede-social a {
+  text-decoration: none;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  opacity: 0.7;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto)
+}
+
+.hero article {
+  position: absolute;
+  top: 300px;
+  left: 0;
+  width: 96.19%;
+  text-align: justify;
+  border-radius: 1%;
+  text-shadow: 0px 0px 2px var(--cor-sombra);
+  background-color: var(--cor-fundo);
+  opacity: 0.9;
+}
+
+.hero article img {
+  width: 125px;
+  float: right;
+  border-radius: 5%;
+  margin: 10px 10px 10px 30px;
+}
