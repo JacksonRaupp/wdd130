@@ -19,23 +19,41 @@
   box-sizing: border-box;
 }
 
-main {
+header,
+.grid,
+footer {
   max-width: var(--limite-de-largura);
 }
 
 nav {
   background-color: var(--cor-destaque);
   padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 nav a {
   color: var(--cor-texto-fundo-escuro);
   display: block;
-  padding: 20px;
+  padding: 0.5rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 700;
 }
 
 h1 {
   color: var(--cor-destaque);
+  border-bottom: var(--espessura-da-borda) var(--estilo-da-borda) var(--cor-da-borda);
+}
+
+.grid {
+  display: grid;
+  align-items: center;
+}
+
+main {
+  grid-column: 2/3;
+  margin: 1rem;
 }
 
 main img {
@@ -51,12 +69,12 @@ p {
 
 aside {
   position: relative;
-  width: var(--limite-de-largura);
-  margin: 0;
   border: var(--espessura-da-borda) var(--estilo-da-borda) var(--cor-da-borda);
   padding: 10%;
   background-color: var(--cor-do-fundo-escuro);
   color: var(--cor-texto-fundo-escuro);
+  grid-column: 1/2;
+  grid-row: 1/2;
 }
 
 aside img {
@@ -76,7 +94,6 @@ footer {
   border-top: var(--espessura-da-borda) double var(--cor-da-borda);
 }
 
-/* Seletores de Classe */
 .caixa {
   margin: 1rem;
   border: var(--espessura-da-borda), var(--estilo-da-borda), rgb(0, 0, 0 / 10%);
