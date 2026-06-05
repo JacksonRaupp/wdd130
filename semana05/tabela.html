@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="estilos/tabela.css">
+  </head>
+  <body>
+    <header></header>
+
+    <main>
+      <!-- table - Cria um container para tabela -->
+      <!-- tr - Cria uma linha -->
+      <!-- th - Cria uma célula de cabeçalho -->
+      <!-- td - Cria uma célula de dados -->
+      <!-- thead - Contém as linhas de cabeçalho -->
+      <!-- tbody - Contém as linhas de dados da tabela principal -->
+      <!-- tfoot - Contém as linhas de rodapé -->
+      <!-- colspan="2" - A célula se estende por 2 colunas -->
+      <!-- rowspan="3" - A célula se estende por 3 linhas -->
+      <table>
+        <thead>
+          <tr>
+            <th>Liga</th>
+            <th>Time</th>
+            <th>Retrospecto (vitórias-derrotas)</th>
+            <th>Número de Jogadores</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td rowspan="2">Sul</td>
+            <td>Paraná</td>
+            <td>52-19</td>
+            <td>23</td>
+          </tr>
+
+          <tr>
+            <td>Santa Catarina</td>
+            <td>49-24</td>
+            <td>10</td>
+          </tr>
+
+          <tr>
+            <td rowspan="3">Oeste</td>
+            <td>Lacerda</td>
+            <td>92-70</td>
+            <td>27</td>
+          </tr>
+
+          <tr>
+            <td>Acre</td>
+            <td>75-87</td>
+            <td>20</td>
+          </tr>
+
+          <tr>
+            <td>Rondônia</td>
+            <td>10-7</td>
+            <td>12</td>
+          </tr>
+        </tbody>
+
+        <tfoot>
+          <tr>
+            <td colspan="3">Total de Jogadores</td>
+            <td>92</td>
+          </tr>
+        </tfoot>
+      </table>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
