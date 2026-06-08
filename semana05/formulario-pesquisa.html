@@ -1,66 +1,70 @@
 <!doctype html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <header></header>
 
-    <main>
-      <form action="">
-        <fieldset>
-          <legend>Informações de Contato</legend>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WDD 130 | Formulário HTML - Pesquisa de Usuário</title>
+  <link rel="stylesheet" href="estilos/formulario-pesquisa.css" />
+</head>
 
-          <label for="nomecompleto">Nome Completo:</label>
-          <input type="text" id="nome-completo" name="nome-completo" required />
+<body>
+  <header>
+    <h1>WDD 130 | Formulário HTML - Pesquisa de Usuário</h1>
+  </header>
 
-          <br /><br />
+  <main>
+    <form action="">
+      <fieldset id="info-contato">
+        <legend>Informações de Contato</legend>
 
-          <label for="email">Endereço de e-mail:</label>
-          <input type="email" name="email" id="email" required />
-        </fieldset>
+        <label for="nomecompleto">Nome Completo:</label>
+        <input type="text" id="nome-completo" name="nome-completo" required />
 
-        <br />
+        <br /><br />
 
-        <fieldset>
-          <legend>Perguntas</legend>
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="email" required />
+      </fieldset>
 
-          <label for="nevegadorfavorito"
-            >Qual é o seu navegador favorito?</label
-          >
-          <select name="navegador" id="navegador">
-            <option value="1">Edge</option>
-            <option value="2">Chrome</option>
-            <option value="3">Firefox</option>
-            <option value="3">Safari</option>
-            <option value="3">Brave</option>
-            <option value="3">Outro</option>
-          </select>
+      <br />
 
-          <br /><br />
+      <fieldset id="perguntas">
+        <legend>Perguntas</legend>
 
-          <label for="pet">Você tem um bichinho de estimação?</label>
-          <input type="checkbox" name="pet" id="pet" />
+        <label for="nevegadorfavorito">Qual é o seu navegador favorito?</label>
+        <select name="navegador" id="navegador">
+          <option value="1">Edge</option>
+          <option value="2">Chrome</option>
+          <option value="3">Firefox</option>
+          <option value="3">Safari</option>
+          <option value="3">Brave</option>
+          <option value="3">Outro</option>
+        </select>
 
-          <br /><br />
+        <br /><br />
 
-          <label for="feedback">Liste os lugares onde você morou:</label>
-          <textarea
-            name="feedback"
-            id="feedback"
-            rows="4"
-            placeholder="Cuiabá, Curitíba, Conquista D'Oeste, Piracicaba, São Paulo."
-          ></textarea>
-        </fieldset>
+        <label for="pet">Você tem um animal de estimação?</label>
+        <input type="checkbox" name="pet" id="pet" />
 
-        <br />
+        <br /><br />
 
-        <button type="submit">Enviar Pesquisa</button>
-      </form>
-    </main>
+        <label for="feedback">Liste os lugares onde você morou:</label>
+        <textarea name="feedback" id="feedback" rows="4"
+          placeholder="Cuiabá, Curitíba, Conquista D'Oeste, Piracicaba, São Paulo."></textarea>
+      </fieldset>
 
-    <footer></footer>
-  </body>
+      <br />
+
+      <button type="submit">Enviar Pesquisa</button>
+    </form>
+  </main>
+
+  <footer>
+    <hr />
+    &copy;2026 | Forumlário HTML - Atividade de Pesquisa de Usuário | Jackson
+    Raupp
+  </footer>
+</body>
+
 </html>
