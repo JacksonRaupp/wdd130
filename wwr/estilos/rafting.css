@@ -20,6 +20,7 @@ body {
   color: var(--cor-texto);
   background-color: black;
   justify-items: center;
+  align-items: center;
 }
 
 header,
@@ -49,6 +50,11 @@ article {
   padding: 8px;
 }
 
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
 nav {
   align-self: center;
 }
@@ -61,7 +67,7 @@ nav ul {
 
 nav ul li a {
   text-decoration: none;
-  color: white;
+  color: #ffffff;
   padding: 10px 20px;
 }
 
@@ -155,6 +161,10 @@ h2 {
 
 #endereco {
   text-align: center;
+  background-color: #0b1f2a;
+  width: 100%;
+  padding: 30px;
+  margin: 0;
 }
 
 address p {
@@ -171,6 +181,10 @@ iframe {
 #conteudo {
   display: flex;
   justify-content: space-between;
+  background-color: #0b1f2a;
+  margin: 0;
+  padding: 30px;
+  width: 100%;
 }
 
 form {
@@ -243,10 +257,10 @@ form {
 button {
   width: 100%;
   height: 40px;
-  background-color: #0879b6;
+  background-color: #EA580C;
   border-radius: 10px;
   font-size: large;
-  color: white;
+  color: #ffffff;
   border-style: groove;
 }
 
@@ -273,4 +287,50 @@ footer {
 footer nav {
   position: absolute;
   right: 0px;
+  color: #0000ff;
+}
+
+.contato {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+.contato form {
+  width: 500px;
+  padding: 30px 50px;
+  background-color: #0b1f2a;
+  margin: 0 7.5px 0 0;
+}
+
+.contato button {
+  width: 200px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 0 10px var(--cor-sombra);
+}
+
+#passeios {
+  background-color: #0b1f2a;
+  text-align: center;
+  margin: 0px 0px 0px 7.5px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#ofertas {
+  background-color: #0b1f2a;
+  margin: 0;
+  padding: 30px;
+  text-align: center;
+}
+
+#ofertas div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }

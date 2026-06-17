@@ -1,23 +1,148 @@
 <!doctype html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Página de teste</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li>
-            <a href="../index.html">Retornar</a>
-          </li>
 
-          <li>
-            <a href="sobre.html">Sobre Nós</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Página de teste</title>
+
+  <link rel="stylesheet" href="estilos/rafting.css">
+</head>
+
+<body>
+  <header>
+    <img src="imagens/logotipo-rafting.png"
+      alt="Arte de uma onda com um azul vivido escrito RAFTING em cima e um remo vermelho ao fundo" />
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Página Inicial</a></li>
+
+        <li><a href="sobre.html">Sobre Nós</a></li>
+
+        <li><a href="passeios.html">Passeios</a></li>
+
+        <li><a href="contato.html">Fale Conosco</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <br>
+
+  <main>
+
+    <div class="hero">
+      <img src="imagens/hero-image-rafting.jpg" alt="Pessoas em um bote descendo as corredeiras de um rio" />
+
+      <h1>Rafting Business</h1>
+
+      <article>
+        <img src="imagens/cliente.jpg" alt="Cliente feliz praticando Rafting" />
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad sunt
+          pariatur cumque voluptate recusandae. Odio, doloremque dicta
+          assumenda sint illo alias iusto. Adipisci ut earum eaque porro.
+          Ipsam, molestias quod.
+        </p>
+      </article>
+    </div>
+
+    <br>
+
+    <section class="contato">
+      <form>
+        <hr>
+        <br><br>
+
+        <fieldset id="info-contato">
+          <div class="contato">
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" placeholder="Digite aqui">
+          </div>
+
+          <br><br>
+
+          <div class="contato">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="Digite aqui">
+          </div>
+        </fieldset>
+
+        <br><br>
+
+        <fieldset id="mensagem">
+          <label for="inscricao">
+            <input type="checkbox" name="inscricao" id="inscricao">
+            Por favor, me inscreva na newslatter mensal
+          </label>
+
+          <br><br>
+
+          <button type="submit">Entre em Contato!</button>
+        </fieldset>
+
+        <br><br>
+        <hr>
+      </form>
+
+
+      <div id="passeios">
+        <a href="passeios.html">
+          <h2>Venha conhecer nossos passeios!</h2>
+        </a>
+      </div>
+    </section>
+
+    <br>
+
+    <section id="ofertas">
+      <h2>Confira nossas ofertas com até 10% de desconto!</h2>
+
+      <br>
+
+      <div>
+        <figure>
+          <img src="imagens/img1-rio-colorado.jpg" alt="" width="120" height="120">
+
+          <figcaption>Rio Colorado</figcaption>
+        </figure>
+
+        <figure>
+          <img src="imagens/img3-rio-zambeze.jpg" alt="" width="120" height="120">
+
+          <figcaption>Rio Zambeze</figcaption>
+        </figure>
+
+        <figure>
+          <img src="imagens/img5-rio-tara.jpg" alt="" width="120" height="120">
+
+          <figcaption>Rio Tara</figcaption>
+        </figure>
+      </div>
+    </section>
+
+  </main>
+
+  <br>
+
+  <footer>
+    <p>&copy;2026 - Rafting Business - Jackson Raupp</p>
+
+    <nav class="socialmedia">
+      <a href="https://x.com/">
+        <img src="imagens/logo-x.png" alt="Logotipo X" width="40" />
+      </a>
+
+      <a href="https://github.com/">
+        <img src="imagens/logo-github.png" alt="Logotipo GitHub" width="40" />
+      </a>
+
+      <a href="https://br.linkedin.com/">
+        <img src="imagens/logo-linkedin.png" alt="Logotipo Linkedin" width="40" />
+      </a>
+    </nav>
+  </footer>
+</body>
+
 </html>
